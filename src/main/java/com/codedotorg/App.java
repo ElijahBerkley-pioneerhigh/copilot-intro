@@ -10,7 +10,7 @@ public class App extends Application {
     }
 
     public void start(Stage primaryStage) {
-        PixelPedia games = new PixelPedia(primaryStage, 400, 400);
+        PixelPedia games = new PixelPedia(primaryStage, 1020, 1020);
         games.startApp();
     }
 

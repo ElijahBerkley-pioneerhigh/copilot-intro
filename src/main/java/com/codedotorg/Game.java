@@ -1,6 +1,6 @@
 package com.codedotorg;
 
-public class Game {
+public class Game implements Comparable{
     
     /** The title of a game */
     private String title;
@@ -22,4 +22,8 @@ public class Game {
         return title;
     }
 
+    public int compareTo(Object o) {
+        Game other = (Game) o;
+        return this.title.compareTo(other.title);
+    }
 }
